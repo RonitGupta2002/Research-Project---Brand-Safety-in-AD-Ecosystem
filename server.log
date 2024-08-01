@@ -1,0 +1,104 @@
+Running BrowserMob Proxy using LittleProxy implementation. To revert to the legacy implementation, run the proxy with the command-line option '--use-littleproxy false'.
+[INFO  2024-07-06T13:39:34,520 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2024-07-06T13:39:34,537 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2024-07-06T13:39:34,870 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2024-07-06T13:39:34,964 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:8081 
+[INFO  2024-07-06T13:39:38,052 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1489933928-21) Starting proxy at address: 0.0.0.0/0.0.0.0:8082 
+[INFO  2024-07-06T13:39:38,068 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1489933928-21) Proxy listening with TCP transport 
+[INFO  2024-07-06T13:39:38,715 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1489933928-21) Proxy started at address: /0:0:0:0:0:0:0:0:8082 
+[WARN  2024-07-06T13:39:44,061 net.lightbody.bmp.mitm.util.SslUtil] (LittleProxy-0-ClientToProxyWorker-0) Disabling upstream server certificate verification. This will allow attackers to intercept communications with upstream servers. 
+[INFO  2024-07-06T13:40:18,424 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (NEGOTIATING_CONNECT) [id: 0x72678e46, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61319]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:40:18,424 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-0) (DISCONNECTED) [id: 0x57b261b4, L:0.0.0.0/0.0.0.0:61322 ! R:edge-chat.facebook.com/157.240.3.20:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:41:52,989 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (NEGOTIATING_CONNECT) [id: 0x276e9d60, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61536]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:41:52,990 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-2) (HANDSHAKING) [id: 0xd6dc602c, L:0.0.0.0/0.0.0.0:61537 ! R:www.google.com/192.0.0.88:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:41:53,034 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (NEGOTIATING_CONNECT) [id: 0x95cc63eb, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61538]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:41:53,035 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-3) (HANDSHAKING) [id: 0xcf55caf6, L:0.0.0.0/0.0.0.0:61539 ! R:www.google.com/192.0.0.88:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:41:53,035 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (NEGOTIATING_CONNECT) [id: 0x2942f154, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61540]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:41:53,036 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-4) (HANDSHAKING) [id: 0x4528b1bb, L:0.0.0.0/0.0.0.0:61541 ! R:www.google.com/192.0.0.88:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:41:53,041 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (NEGOTIATING_CONNECT) [id: 0x65815c2f, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61542]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:41:53,044 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-6) (HANDSHAKING) [id: 0x0ccf55e4, L:0.0.0.0/0.0.0.0:61543 ! R:www.google.com/192.0.0.88:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:41:53,118 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (NEGOTIATING_CONNECT) [id: 0xbc6122b9, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61531]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:41:53,119 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-1) (HANDSHAKING) [id: 0x8ebab14f, L:0.0.0.0/0.0.0.0:61535 ! R:csp.withgoogle.com/172.217.14.241:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:41:53,614 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (NEGOTIATING_CONNECT) [id: 0x330c33b9, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61530]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:41:53,615 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-7) (HANDSHAKING) [id: 0xee253a6f, L:0.0.0.0/0.0.0.0:61532 ! R:beacons2.gvt2.com/216.58.196.67:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:43:51,726 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x0a082021, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61922]: An IOException occurred on ClientToProxyConnection: An existing connection was forcibly closed by the remote host 
+[INFO  2024-07-06T13:44:00,240 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (NEGOTIATING_CONNECT) [id: 0xf026806d, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61934]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:00,240 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-4) (HANDSHAKING) [id: 0x4c59fd29, L:0.0.0.0/0.0.0.0:61935 ! R:update.googleapis.com/142.251.33.67:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:17,746 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0x04d386fa, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61947]: Bad Host web-chat-e2ee.facebook.com:443 
+[INFO  2024-07-06T13:44:17,746 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0x4d29e8a9, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61944]: Bad Host web-chat-e2ee.facebook.com:443 
+[INFO  2024-07-06T13:44:17,746 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (AWAITING_INITIAL) [id: 0x4d29e8a9, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61944]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:19,143 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0xe28f32f6, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61945]: Bad Host gateway.facebook.com:443 
+[INFO  2024-07-06T13:44:19,143 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (AWAITING_INITIAL) [id: 0xf56284e3, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61948]: Bad Host gateway.facebook.com:443 
+[INFO  2024-07-06T13:44:19,143 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0xe28f32f6, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61945]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:20,214 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0xf7740476, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61946]: Bad Host beacons.gvt2.com:443 
+[INFO  2024-07-06T13:44:20,216 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0xf7740476, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61946]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:21,091 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-0) (AWAITING_INITIAL) [id: 0x45badb74, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61952]: Bad Host web-chat-e2ee.facebook.com:443 
+[INFO  2024-07-06T13:44:28,053 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (NEGOTIATING_CONNECT) [id: 0x4c286df4, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61960]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:28,055 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-4) (HANDSHAKING) [id: 0x19a48f5b, L:0.0.0.0/0.0.0.0:61962 ! R:tracking.crazyegg.com/3.12.134.68:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:29,000 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (NEGOTIATING_CONNECT) [id: 0xfe6d1cc1, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61953]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:29,000 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-1) (HANDSHAKING) [id: 0x596b25cd, L:0.0.0.0/0.0.0.0:61954 ! R:tracking.crazyegg.com/3.12.134.68:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:29,047 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (NEGOTIATING_CONNECT) [id: 0x8775e3d0, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61958]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:29,047 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-3) (HANDSHAKING) [id: 0x5cc27ea3, L:0.0.0.0/0.0.0.0:61959 ! R:tracking.crazyegg.com/3.12.134.68:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:29,805 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-6) (AWAITING_INITIAL) [id: 0xd54697fc, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61950]: Bad Host beacons2.gvt2.com:443 
+[INFO  2024-07-06T13:44:29,807 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-6) (AWAITING_INITIAL) [id: 0xd54697fc, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61950]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:29,948 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0x03708601, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61951]: Bad Host www.facebook.com:443 
+[INFO  2024-07-06T13:44:29,948 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0xaa8a5ea6, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61955]: Bad Host www.facebook.com:443 
+[INFO  2024-07-06T13:44:29,948 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-2) (AWAITING_INITIAL) [id: 0xaa8a5ea6, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61955]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:29,948 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0x03708601, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61951]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:29,948 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-7) (AWAITING_INITIAL) [id: 0x39a0dfc7, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61963]: Bad Host www.facebook.com:443 
+[INFO  2024-07-06T13:44:30,161 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0x04455456, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61974]: Bad Host www.facebook.com:443 
+[INFO  2024-07-06T13:44:30,876 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-1) (NEGOTIATING_CONNECT) [id: 0xd16db907, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61968]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:30,876 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-5) (HANDSHAKING) [id: 0x4cbb0665, L:0.0.0.0/0.0.0.0:61969 ! R:tracking.crazyegg.com/3.12.134.68:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:31,017 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-4) (AWAITING_INITIAL) [id: 0xe5dd270f, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61976]: Bad Host www.facebook.com:443 
+[INFO  2024-07-06T13:44:31,961 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (NEGOTIATING_CONNECT) [id: 0x2b6ab9ec, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61956]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:31,976 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-2) (HANDSHAKING) [id: 0xfa6d903b, L:0.0.0.0/0.0.0.0:61957 ! R:tracking.crazyegg.com/3.12.134.68:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:37,428 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-3) (AWAITING_INITIAL) [id: 0xc7fa2e34, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:61994]: Bad Host www.facebook.com:443 
+[INFO  2024-07-06T13:44:40,310 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-5) (AWAITING_INITIAL) [id: 0xabdfd1de, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:62000]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:40,488 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-7) (HANDSHAKING) [id: 0x7eea7571, L:0.0.0.0/0.0.0.0:61973 ! R:beacons3.gvt2.com/172.217.14.227:443]: Connection to upstream server failed javax.net.ssl.SSLException: handshake timed out
+	at io.netty.handler.ssl.SslHandler.handshake(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:40,634 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-0) (HANDSHAKING) [id: 0x133b5972, L:0.0.0.0/0.0.0.0:61975 ! R:beacons4.gvt2.com/216.239.32.116:443]: Connection to upstream server failed javax.net.ssl.SSLException: handshake timed out
+	at io.netty.handler.ssl.SslHandler.handshake(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:42,659 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-2) (HANDSHAKING) [id: 0x81f46aa5, L:0.0.0.0/0.0.0.0:61985 ! R:beacons5.gvt2.com/216.239.32.116:443]: Connection to upstream server failed javax.net.ssl.SSLException: handshake timed out
+	at io.netty.handler.ssl.SslHandler.handshake(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:57,714 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-3) (HANDSHAKING) [id: 0x25018a74, L:0.0.0.0/0.0.0.0:62010 ! R:beacons5.gvt3.com/172.217.14.227:443]: Connection to upstream server failed javax.net.ssl.SSLException: handshake timed out
+	at io.netty.handler.ssl.SslHandler.handshake(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:44:59,343 org.littleshoot.proxy.impl.ClientToProxyConnection] (LittleProxy-0-ClientToProxyWorker-6) (NEGOTIATING_CONNECT) [id: 0x80c9ceac, L:/0:0:0:0:0:0:0:1:8082 - R:/0:0:0:0:0:0:0:1:62031]: An IOException occurred on ClientToProxyConnection: An established connection was aborted by the software in your host machine 
+[INFO  2024-07-06T13:44:59,343 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-0) (HANDSHAKING) [id: 0x414bede2, L:0.0.0.0/0.0.0.0:62032 ! R:www.facebook.com/157.240.3.35:443]: Connection to upstream server failed java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:45:09,353 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-2) (HANDSHAKING) [id: 0xf8d400cf, L:0.0.0.0/0.0.0.0:62036 ! R:clients2.google.com/142.251.33.78:443]: Connection to upstream server failed javax.net.ssl.SSLException: handshake timed out
+	at io.netty.handler.ssl.SslHandler.handshake(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+
+[INFO  2024-07-06T13:45:10,075 org.littleshoot.proxy.impl.ProxyToServerConnection] (LittleProxy-0-ProxyToServerWorker-1) (HANDSHAKING) [id: 0x36ad9d10, L:0.0.0.0/0.0.0.0:62035 ! R:comcluster.cxense.com/145.40.89.32:443]: Connection to upstream server failed javax.net.ssl.SSLException: handshake timed out
+	at io.netty.handler.ssl.SslHandler.handshake(...)(Unknown Source) ~[browsermob-dist-2.1.4.jar:?]
+

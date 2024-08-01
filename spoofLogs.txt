@@ -1,0 +1,45 @@
+Spoofing Through Life
+[ERROR] setupEasyList()::AdCollector: Traceback (most recent call last):
+  File "c:\Users\ronit\OneDrive\Desktop\Temporary\AdCollector.py", line 66, in setupEasyList
+    rules = f.readlines()
+            ^^^^^^^^^^^^^
+  File "C:\Users\ronit\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 4514: character maps to <undefined>
+
+Exception occured while reading filter_rules for domain: politicalgarbagechute.com in Iteration: 69 | cvs health
+CSS ads collected for domain: politicalgarbagechute.com in Iteration: 69 | cvs health [Time: 4.767714023590088]
+Successfully collected CSS Ads wihin 500s ... [Time: 4.770330190658569]
+[ERROR] collectAds()::AdCollector: Traceback (most recent call last):
+  File "c:\Users\ronit\OneDrive\Desktop\Temporary\AdCollector.py", line 348, in collectAds
+    os.remove(ad_ss_path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\ronit\\OneDrive\\Desktop\\Temporary\\Controlled Data Collected\\cvs health\\politicalgarbagechute.com\\Ads\\6_iframe.png'
+
+Exception occured in iframe ad collection for domain: politicalgarbagechute.com | cvs health
+[ERROR] collectAds()::AdCollector: Traceback (most recent call last):
+  File "c:\Users\ronit\OneDrive\Desktop\Temporary\AdCollector.py", line 348, in collectAds
+    os.remove(ad_ss_path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\ronit\\OneDrive\\Desktop\\Temporary\\Controlled Data Collected\\cvs health\\politicalgarbagechute.com\\Ads\\7_iframe.png'
+
+Exception occured in iframe ad collection for domain: politicalgarbagechute.com | cvs health
+[ERROR] collectAds()::AdCollector: Traceback (most recent call last):
+  File "c:\Users\ronit\OneDrive\Desktop\Temporary\AdCollector.py", line 348, in collectAds
+    os.remove(ad_ss_path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\ronit\\OneDrive\\Desktop\\Temporary\\Controlled Data Collected\\cvs health\\politicalgarbagechute.com\\Ads\\8_iframe.png'
+
+Exception occured in iframe ad collection for domain: politicalgarbagechute.com | cvs health
+[ERROR] collectAds()::AdCollector: Traceback (most recent call last):
+  File "c:\Users\ronit\OneDrive\Desktop\Temporary\AdCollector.py", line 348, in collectAds
+    os.remove(ad_ss_path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\ronit\\OneDrive\\Desktop\\Temporary\\Controlled Data Collected\\cvs health\\politicalgarbagechute.com\\Ads\\9_iframe.png'
+
+Exception occured in iframe ad collection for domain: politicalgarbagechute.com | cvs health
+[ERROR] collectAds()::AdCollector: Traceback (most recent call last):
+  File "c:\Users\ronit\OneDrive\Desktop\Temporary\AdCollector.py", line 348, in collectAds
+    os.remove(ad_ss_path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Users\\ronit\\OneDrive\\Desktop\\Temporary\\Controlled Data Collected\\cvs health\\politicalgarbagechute.com\\Ads\\10_iframe.png'
+
+Exception occured in iframe ad collection for domain: politicalgarbagechute.com | cvs health
+Iframe ads collected for domain: politicalgarbagechute.com in Iteration: 69 | cvs health [Time: 5.6512041091918945]
+Succesfully captured 8 iframe-based screenshots out of 13 for domain: politicalgarbagechute.com | cvs health
