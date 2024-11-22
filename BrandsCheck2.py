@@ -1286,7 +1286,7 @@ if __name__ == "__main__":
 
     print("IT STARTS!")
 
-    excelWebsites = pd.read_excel("WebsitesDataset.xlsx")
+    excelWebsites = pd.read_excel("WebsitesDataset1.xlsx")
     selected_column = excelWebsites['Websites']
     selected_column = selected_column.head(30)
     websites = pd.DataFrame({'Websites': selected_column})
@@ -1369,7 +1369,7 @@ if __name__ == "__main__":
             # TREATMENT PHASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             serverTreatment, proxyTreatment, chrome_options = configureProxy(PORT)
-            driverTreatment = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+            driverTreatment = webdriver.Chrome(options=chrome_options)
             driverTreatment.set_page_load_timeout(60)
             # Comment this for headless!!!
             driverTreatment.maximize_window()
@@ -1419,7 +1419,7 @@ if __name__ == "__main__":
             # CONTROLLED PHASE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             serverControlled, proxyControlled, chrome_options = configureProxy(PORT)
-            driverControlled = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+            driverControlled = webdriver.Chrome(options=chrome_options)
             driverControlled.set_page_load_timeout(60)
             # Comment this for headless!!!
             driverControlled.maximize_window()
